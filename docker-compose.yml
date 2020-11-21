@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  jupyterlab:
+    build: ./
+    ports:
+      - 8888:8888
+    volumes:
+      - ./src:/home/jovyan/work
